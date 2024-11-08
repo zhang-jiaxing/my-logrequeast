@@ -1,0 +1,19 @@
+2024-11-08 18:09:49 [main] INFO  cn.jason.MyApp - Starting MyApp using Java 17.0.9 with PID 5580 (E:\IDEA\idea\mulu\my-logrequest\my-spring-web-demo\target\classes started by Jason Zhang in E:\IDEA\idea\mulu\my-logrequest)
+2024-11-08 18:09:49 [main] INFO  cn.jason.MyApp - No active profile set, falling back to 1 default profile: "default"
+2024-11-08 18:09:49 [main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-11-08 18:09:49 [main] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+2024-11-08 18:09:49 [main] INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2024-11-08 18:09:50 [main] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2024-11-08 18:09:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 925 ms
+2024-11-08 18:09:50 [main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-08 18:09:50 [main] INFO  cn.jason.MyApp - Started MyApp in 1.656 seconds (process running for 2.269)
+2024-11-08 18:11:58 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-08 18:11:58 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-08 18:11:58 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 0 ms
+2024-11-08 18:11:58 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-11-08 18:12:11 [http-nio-8080-exec-4] INFO  c.j.s.LogRequestAspect - Request Method: GET - Request URL: /demo/test - param入参: param0=John
+2024-11-08 18:12:11 [http-nio-8080-exec-4] INFO  c.j.s.LogRequestAspect - Request URL: /demo/test - 返回参数: "John"
+2024-11-08 18:13:17 [http-nio-8080-exec-6] INFO  c.j.s.LogRequestAspect - Request Method: POST - Request URL: /demo/test2 - Body入参: {"name":"jason","age":21,"sex":"男"}
+2024-11-08 18:13:17 [http-nio-8080-exec-6] INFO  c.j.s.LogRequestAspect - Request URL: /demo/test2 - 返回参数: {"name":"jason","age":21,"sex":"男"}
+2024-11-08 18:13:59 [http-nio-8080-exec-7] INFO  c.j.s.LogRequestAspect - Request Method: GET - Request URL: /demo/test3/lihua - variable入参: variable0=lihua
+2024-11-08 18:13:59 [http-nio-8080-exec-7] INFO  c.j.s.LogRequestAspect - Request URL: /demo/test3/lihua - 返回参数: "lihua"
