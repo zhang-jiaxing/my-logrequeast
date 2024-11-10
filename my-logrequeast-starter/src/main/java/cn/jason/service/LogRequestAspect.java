@@ -44,7 +44,7 @@ public class LogRequestAspect {
         if (loggingService != null) {
             String logMessage = loggingService.formatLog(request, joinPoint.getArgs());  // 生成日志内容
             log.info(logMessage);  // 将日志写入文件
-            log.info("这是一条测试信息");
+//            log.info("这是一条测试信息");
         }
         // 执行方法并捕获返回值
         Object result;

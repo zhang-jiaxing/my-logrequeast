@@ -1,0 +1,21 @@
+2024-11-10 15:33:55 [main] INFO  c.j.c.LogConfiguration - 日志配置完成，日志文件路径: E:\IDEA\idea\mulu\my-logrequest\application.log
+2024-11-10 15:33:55 [main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-10 15:33:55 [main] INFO  cn.jason.MyApp - Started MyApp in 1.391 seconds (process running for 1.816)
+2024-11-10 15:36:34 [main] INFO  c.j.c.LogConfiguration - 日志配置完成，日志文件路径: E:\IDEA\idea\mulu\my-logrequest\application.log
+2024-11-10 15:36:34 [main] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-10 15:36:34 [main] INFO  cn.jason.MyApp - Started MyApp in 1.294 seconds (process running for 1.705)
+2024-11-10 15:37:06 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-10 15:37:06 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-10 15:37:06 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet - Completed initialization in 0 ms
+2024-11-10 15:37:06 [http-nio-8080-exec-2] INFO  c.j.s.LogRequestAspect - Request Method: GET - Request URL: /demo/test - param入参: param0=John
+2024-11-10 15:37:06 [http-nio-8080-exec-2] INFO  c.j.s.LogRequestAspect - 这是一条测试信息
+2024-11-10 15:37:06 [http-nio-8080-exec-2] INFO  c.j.s.LogRequestAspect - Request URL: /demo/test - 返回参数: "John"
+2024-11-10 15:37:36 [http-nio-8080-exec-3] INFO  c.j.s.LogRequestAspect - Request Method: POST - Request URL: /demo/test2 - Body入参: {"name":"jason","age":21,"sex":"男"}
+2024-11-10 15:37:36 [http-nio-8080-exec-3] INFO  c.j.s.LogRequestAspect - 这是一条测试信息
+2024-11-10 15:37:36 [http-nio-8080-exec-3] INFO  c.j.s.LogRequestAspect - Request URL: /demo/test2 - 返回参数: {"name":"jason","age":21,"sex":"男"}
+2024-11-10 15:37:51 [http-nio-8080-exec-4] INFO  c.j.s.LogRequestAspect - Request Method: GET - Request URL: /demo/test3/lihua - variable入参: variable0=lihua
+2024-11-10 15:37:51 [http-nio-8080-exec-4] INFO  c.j.s.LogRequestAspect - 这是一条测试信息
+2024-11-10 15:37:51 [http-nio-8080-exec-4] INFO  c.j.s.LogRequestAspect - Request URL: /demo/test3/lihua - 返回参数: "lihua"
+2024-11-10 15:38:04 [http-nio-8080-exec-5] INFO  c.j.s.LogRequestAspect - Request Method: GET - Request URL: /demo/test3/lihua/21 - variable入参: variable0=lihua, variable1=21
+2024-11-10 15:38:04 [http-nio-8080-exec-5] INFO  c.j.s.LogRequestAspect - 这是一条测试信息
+2024-11-10 15:38:04 [http-nio-8080-exec-5] INFO  c.j.s.LogRequestAspect - Request URL: /demo/test3/lihua/21 - 返回参数: "lihua:21"
