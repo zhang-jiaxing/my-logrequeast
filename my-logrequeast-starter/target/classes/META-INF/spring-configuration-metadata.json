@@ -1,0 +1,56 @@
+{
+  "groups": [
+    {
+      "name": "spring.log-boot",
+      "type": "cn.jason.LogBootProperties",
+      "sourceType": "cn.jason.LogBootProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.log-boot.log-file-name",
+      "type": "java.lang.String",
+      "sourceType": "cn.jason.LogBootProperties"
+    },
+    {
+      "name": "spring.log-boot.log-level",
+      "type": "java.lang.String",
+      "sourceType": "cn.jason.LogBootProperties"
+    },
+    {
+      "name": "spring.log-boot.log-path",
+      "type": "java.lang.String",
+      "sourceType": "cn.jason.LogBootProperties"
+    },
+    {
+      "name": "spring.log-boot.log-pattern",
+      "type": "java.lang.String",
+      "sourceType": "cn.jason.LogBootProperties"
+    },
+    {
+      "name": "spring.log-boot.logFileName",
+      "type": "java.lang.String",
+      "description": "The name of the log file.",
+      "defaultValue": "application.log"
+    },
+    {
+      "name": "spring.log-boot.logLevel",
+      "type": "java.lang.String",
+      "description": "The logging level (e.g. DEBUG, INFO, WARN, ERROR).",
+      "defaultValue": "INFO"
+    },
+    {
+      "name": "spring.log-boot.logPath",
+      "type": "java.lang.String",
+      "description": "The directory where log files will be stored.",
+      "defaultValue": "E:\\logs"
+    },
+    {
+      "name": "spring.log-boot.logPattern",
+      "type": "java.lang.String",
+      "description": "The pattern for log messages.",
+      "defaultValue": "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{15} - %msg%n"
+    }
+  ],
+  "hints": []
+}

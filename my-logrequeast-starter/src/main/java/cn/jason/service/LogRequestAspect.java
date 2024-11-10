@@ -2,6 +2,7 @@ package cn.jason.service;
 
 import cn.jason.annotation.LogRequest;
 import cn.jason.annotation.RequestParamType;
+import cn.jason.config.LogConfiguration;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -19,7 +20,7 @@ import java.util.Map;
 
 @Aspect
 public class LogRequestAspect {
-    private static final Logger logger = LoggerFactory.getLogger(LogRequestAspect.class);
+    private static final Logger log = LoggerFactory.getLogger(LogRequestAspect.class);
     private final HttpServletRequest request;
     private final Map<RequestParamType, ParamLoggingService> loggingServices;//存储不同类型参数的日志服务
     @Autowired
@@ -42,21 +43,21 @@ public class LogRequestAspect {
         ParamLoggingService loggingService = loggingServices.get(paramType);
         if (loggingService != null) {
             String logMessage = loggingService.formatLog(request, joinPoint.getArgs());  // 生成日志内容
-            logger.info(logMessage);  // 将日志写入文件
+            log.info(logMessage);  // 将日志写入文件
+            log.info("这是一条测试信息");
         }
-
         // 执行方法并捕获返回值
         Object result;
         try {
             result = joinPoint.proceed();  // 执行目标方法并获取返回值
         } catch (Throwable throwable) {
-            logger.error("Error during request processing. Request URL: {} - Params: {}",
+            log.error("Error during request processing. Request URL: {} - Params: {}",
                     request.getRequestURI(), Arrays.toString(joinPoint.getArgs()), throwable);
             throw throwable;
         }
 
         String resultString = (result != null) ? objectMapper.writeValueAsString(result) : "null";
-        logger.info("Request URL: {} - 返回参数: {}", request.getRequestURI(), resultString);
+        log.info("Request URL: {} - 返回参数: {}", request.getRequestURI(), resultString);
         // 返回执行结果
         return result;
     }
